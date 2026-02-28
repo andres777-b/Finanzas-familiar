@@ -11,6 +11,7 @@ public class Miembro3 extends Miembros {
         dineroLibre = getIngresos() - (getGastosPersonales() + getAporteHogar());
         System.out.println("Al miembro 2 le quedan " + dineroLibre + " libres");
 
+        
     }
     
 }
