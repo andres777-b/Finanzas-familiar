@@ -1,6 +1,10 @@
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println("Se suman los ingresos, se restan los gastos personales y los aportes que cada miembro da al hogar y quedan los siguientes datos:");
+        System.out.println("");
+
         Miembros miembro1 = new Miembro1("Andres", 2158000, 300000, 400000);
         miembro1.finanzasPersona();
 
@@ -11,12 +15,13 @@ public class Main {
         miembro3.finanzasPersona();
 
 
-        System.out.println("");
         Integer gastosTotales = miembro1.getAporteHogar() + miembro1.getGastosPersonales() + miembro2.getAporteHogar() + miembro2.getGastosPersonales() + miembro3.getAporteHogar() + miembro3.getGastosPersonales();
 
         Integer total = miembro1.getIngresos() + miembro2.getIngresos() + miembro3.getIngresos();
 
         System.out.println("Entre las 3 personas, les queda un total de " + (total - gastosTotales) + " Mensual Para ahorro, inversion, o libre gasto de la familia");
+
+        System.out.println("");
 
     }
 

@@ -9,7 +9,8 @@ public class Miembro1 extends Miembros {
         Integer dineroLibre;
 
         dineroLibre = getIngresos() - (getGastosPersonales() + getAporteHogar());
-        System.out.println("Al miembro 1 le quedan " + dineroLibre + " libres");
+        System.out.println(getNombre() + ":" + "\nIngresos: " + getIngresos() + "\nGastos personales: " + getGastosPersonales() + "\nAporte al hogar:" + getAporteHogar() + "\nle quedan " + dineroLibre + " libres");
+        System.out.println("");
 
     }
     
